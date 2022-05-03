@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Righteous&display=swap');
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 
+/*----- REGRAS GERAIS -----*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,70 +11,60 @@
     box-sizing: border-box;
 }
 
-img {
-	max-width: 100%;
-    max-height: 100%;
-}
-
-img[data-src] {
-	opacity: 0;
-	transform: scale(0);
-}
-img[src] {
-	opacity: 1;
-	transform: scale(1);
-	transition: .3s ease-in-out;
-}
-
 section {
     margin: 0 70px 1.5em 70px;
 }
 
-.container {
-    text-align: center;
-    margin: 0 30px;
-}
-
 body {
+    padding-top: 10rem;
     font-family: 'Poppins', sans-serif;
-    background-color: #272727;
+    background-color: #161616;
     color: whitesmoke;
-    height: 100vh;
+    height: 100%;
+    width: 100vw;
 }
 
-.nav {
-    background-color: #272727;
-    margin-bottom: 1.5em;
-}
+/*----- HEADER  -----*/
 
-.nav-container {
-    color: whitesmoke;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+header {
+    position: relative;
+    top: -10rem;
+    background-color: #161616;
+    z-index: 1;
 }
 
 .img-logo {
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 4.5rem;
+    width: 100px;
 }
 
-.img-logo img {
-    width: 50px;
+.img-logo img{
+    border-radius: 0 0 10px 10px;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 65px;
+    border-radius: 0 0 10px 10px;
+    background-color: #272727;
+    margin-right: 4.5rem;
+}
+
+.nav-container {
+    padding-top: 1rem;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav_container {
     margin: auto;
-}
-
-.img_logo {
-    display: block;
-    margin: auto;
-}
-
-h1 {
-    font-weight: bold;
-    text-align: center;
 }
 
 .nav-item {
@@ -81,6 +73,105 @@ h1 {
 
 .nav-item:hover {
     color: rgb(250, 176, 37);
+}
+
+/*----- CARDS -----*/
+
+.cards {
+    margin: 0;
+    height: 1000px;
+}
+
+.film_container {
+    position: relative;
+    top: -10rem;
+    z-index: 0;
+    max-width: 100%;
+    height: 800px;
+    background: url(/cinecomp/img/film-background.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.intro {
+    top: 9rem;
+    margin: 0 2.5rem;
+    font-size: 1.5rem;
+}
+
+.intro h1{
+    color: #282828;
+}
+
+.generos_container {
+    padding: 2.5rem;
+    box-sizing: border-box;
+    position: relative;
+    top: -24rem;
+}
+
+.card-cont {
+    transition: all .5s ease;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    box-sizing: border-box;
+}
+
+.card-cont span {
+    position: relative;
+    display: block;
+    top: -3rem;
+    left: 3rem;
+}
+
+
+.card-genre {
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+    transition: all .8s ease;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+
+
+.card-cont:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.05);
+}
+
+/*----- INTRODUCAO -----*/
+
+.introducao_content {
+    text-align: center;
+}
+
+.introducao_content h4 {
+    font-weight: 300;
+    margin-bottom: 0;
+    color: rgb(250, 176, 37);
+}
+
+.introducao_content h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 0;
+    color: rgb(250, 176, 37);
+}
+
+.introducao_content iframe {
+    width: 550px;
+    height: 310px;
+    border-radius: 10px;
+}
+
+.introducao_content button {
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background-color: rgb(250, 176, 37);
 }
 
 .container__origem p {
