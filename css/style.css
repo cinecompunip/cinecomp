@@ -45,7 +45,7 @@ header {
 }
 
 .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 40%;
@@ -300,6 +300,22 @@ header {
     left: -9.5rem;
 }
 
+
+/*----- HISTORIA -----*/
+
+.historia h1 {
+    color: rgb(250, 176, 37);
+}
+
+/*----- SOBRE -----*/
+.sobre h1, .sobre h2{
+    color: rgb(250, 176, 37);
+}
+
+/*----- REFERENCIAS -----*/
+.referencias h1 {
+    color: rgb(250, 176, 37);
+}
 
 /*----- FOOTER -----*/
 footer {
