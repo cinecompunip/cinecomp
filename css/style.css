@@ -100,7 +100,7 @@ header {
 }
 
 .intro h1{
-    color: #282828;
+    color: whitesmoke;
 }
 
 .generos_container {
@@ -164,6 +164,7 @@ header {
     width: 550px;
     height: 310px;
     border-radius: 10px;
+    box-shadow: 1px 1px 7px 2px black;
 }
 
 .introducao_content button {
@@ -178,10 +179,136 @@ header {
     text-align: left;
 }
 
+/*----- GÊNEROS -----*/
+
+.genero-content h1 {
+    color: rgb(250, 176, 37);
+}
+
+.genero_intro {
+    margin-bottom: 5rem;
+}
+
+.genero_back {
+    position: relative;
+    left: -120px;
+    background: url(/cinecomp/img/);
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
+    background-attachment: fixed;
+}
+
+.genero_card {
+    position: relative;
+    top: -8rem;
+    left: 7rem;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 2rem;
+    color: #161616;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 11px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.genero_card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.top_card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.top_card h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.genero_card .bx {
+    color: #363636;
+    font-size: 3rem;
+}
+
+/*terror*/
+.genero_terror {
+    margin-bottom: 15rem;
+}
+.genero_back.terror {
+    background: url(/cinecomp/img/horror-genre.png);
+    background-attachment: fixed;
+}
+.genero_card.terror {
+    background: rgba( 248, 226, 185, 0.65 );
+}
+
+/*aventura*/
+.genero_aventura{
+    margin-bottom: 15rem;
+}
+.genero_back.aventura {
+    background: url(/cinecomp/img/adventure-genre.png);
+    background-attachment: fixed;
+}
+.genero_card.aventura {
+    color: whitesmoke;
+    background: rgba(0, 105, 121, 0.25);
+    backdrop-filter: blur( 12px );
+}
+.top_card.aventura h1,.top_card.aventura .bx{
+    color: whitesmoke;
+}
+
+/*romance*/
+.genero_romance {
+    margin-bottom: 15rem;
+}
+.genero_back.romance {
+    color: whitesmoke;
+    background: url(/cinecomp/img/romantic-genre.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.genero_card.romance {
+    color: whitesmoke;
+    background: rgba( 255, 107, 92, 0.25 );
+}
+.top_card.romance h1,.top_card.romance .bx{
+    color: whitesmoke;
+}
+
+/*ficção*/
+.genero_back.ficcao {
+    background: url(/cinecomp/img/scifi-genre.png);
+    background-attachment: fixed;
+}
+.genero_card.ficcao {
+    backdrop-filter: blur( 3px );
+}
+.top_card.ficcao {
+    align-items: flex-end;
+}
+.top_card.ficcao .bx {
+    position: relative;
+    left: -9.5rem;
+}
+
+
+/*----- FOOTER -----*/
 footer {
     position: relative;
+    box-sizing: border-box;
+    padding: 5px;
     text-align: center;
     font-size: 13px;
     background-color: #272727;
     color: whitesmoke;
 }
+

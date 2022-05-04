@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
     <title>CineComp</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     
     <header>
+        <div class="img-logo">
+            <img src="img/logo-inteiro.png" alt="">
+        </div>
         <nav class="nav">
             <ul class="nav-container">
                 <a href="index.html">
@@ -28,28 +32,81 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <h1>Termo Gênero Cinematográfico</h1><br>
-        <p> Uma breve explicação, é a forma utilizada no setor para diferenciar os variados estilos de filmes existentes, é bom para o público pois permite determinar qual ou quais os gêneros mais preferem assistir.<br />
-           Listaremos alguns gêneros e uma breve explicação, porém os participantes deste projeto escolherão alguns gêneros com suas recomendações.<br>
-           <ul>
-               <li>Ação</li>
-               <li>Aventura</li>
-               <li>Comédia</li>
-               <li>Documentário</li>
-               <li>Drama</li>
-               <li>Espionagem</li>
-               <li>Faroeste</li>
-               <li>Fantasia</li>
-               <li>Guerra</li>
-               <li>Ficção Científica</li>
-               <li>Musical</li>
-               <li>Policial</li>
-               <li>Romance</li>
-               <li>Terror</li>
-           </ul>
-        </p>
-    </div>
+
+    <section class="section genero_intro">
+        <div class="container container">
+            <div class="content genero-content">
+                <h1>Quais são os gêneros cinematográficos?</h1>
+                <p>
+                Uma breve explicação, é a forma utilizada no setor para diferenciar os variados estilos de filmes existentes, é bom para o público pois permite determinar qual ou quais os gêneros mais preferem assistir.<br/>
+                Listaremos alguns gêneros e uma breve explicação.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section generos">
+        <div class="container genero_terror">
+            <div class="content genero-terror_content">
+                <div class="genero_back terror">
+                    <div class="genero_card terror" id="terror">
+                            <div class="top_card terror">
+                                <h1>Terror</h1>
+                                <i class='bx bx-knife'></i>
+                            </div>
+                            <p>QUE OS JOGOS COMECEM!</p>
+                            <span>Terror ou horror é um gênero literário, cinematográfico ou musical, que está sempre muito ligado à fantasia e à ficção especulativa, e é criado com intuito de causar medo, aterrorizar. Também pode ser verificado na pintura, no desenho, nos filmes e fotografia.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container genero_aventura">
+            <div class="content genero-aventura_content">
+                <div class="genero_back aventura">
+                    <div class="genero_card aventura" id="aventura">
+                        <div class="top_card aventura">
+                            <h1>Aventura</h1>
+                            <i class='bx bxs-map-alt'></i>
+                        </div>
+                        <p>EMBARQUE NESSA AVENTURA!</p>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ipsum quos. Vel excepturi consectetur voluptate natus rem repudiandae maiores dolorem, quo ex neque fugit odio, aut eveniet recusandae, et nihil.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container genero_romance">
+            <div class="content genero-romance_content">
+                <div class="genero_back romance">
+                    <div class="genero_card romance" id="romance">
+                        <div class="top_card romance">
+                            <h1>Romance</h1>
+                            <i class='bx bxs-heart'></i>
+                        </div>
+                        <p>O AMOR ESTÁ NO AR!</p>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi ullam quae enim, hic veniam illum numquam architecto minus eaque dolorem totam delectus, ut deserunt accusantium corrupti, nam repellendus magni.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container genero_ficcao">
+            <div class="content genero-ficcao_content">
+                <div class="genero_back ficcao">
+                    <div class="genero_card ficcao" id="ficcao">
+                        <div class="top_card ficcao">
+                            <h1>Ficção científica</h1>
+                            <i class='bx bxs-planet' ></i>
+                        </div>
+                        <p>QUE A FORÇA ESTEJA COM VOCÊ!</p>
+                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quas eveniet eligendi, sed facilis voluptate nesciunt soluta corrupti aliquid. Velit aperiam facere eaque ut quibusdam ipsa hic dolore doloribus non.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         CineComp &copy; Todos os direitos reservados.
     </footer>
