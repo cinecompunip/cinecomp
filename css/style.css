@@ -48,7 +48,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    width: 600px;
+    width: 40%;
     height: 65px;
     border-radius: 0 0 10px 10px;
     background-color: #272727;
@@ -191,10 +191,10 @@ header {
 
 .genero_back {
     position: relative;
-    left: -120px;
+    left: -23%;
     background: url(/cinecomp/img/);
     background-size: cover;
-    width: 100vw;
+    width: 1980px;
     height: 500px;
     background-attachment: fixed;
 }
@@ -312,3 +312,15 @@ footer {
     color: whitesmoke;
 }
 
+/*----- BREAKPOINTS -----*/
+@media  (min-width: 1900px){
+    .genero_card {
+        left: 19rem;
+    }
+}
+
+@media  (max-width:1366px){
+    .genero_back {
+        left: -11%;
+    }
+}
