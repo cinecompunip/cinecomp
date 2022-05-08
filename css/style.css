@@ -252,7 +252,7 @@ header {
     margin-bottom: 15rem;
 }
 .genero_back.terror {
-    background: url(/img/horror-genre.png);
+    background: url(/cinecomp/img/horror-genre.png);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -265,7 +265,7 @@ header {
     margin-bottom: 15rem;
 }
 .genero_back.aventura {
-    background: url(/img/adventure-genre.png);
+    background: url(/cinecomp/img/adventure-genre.png);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -284,7 +284,7 @@ header {
 }
 .genero_back.romance {
     color: whitesmoke;
-    background: url(/img/romantic-genre.png);
+    background: url(/cinecomp/img/romantic-genre.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -299,7 +299,7 @@ header {
 
 /*ficção*/
 .genero_back.ficcao {
-    background: url(/img/scifi-genre.png);
+    background: url(/cinecomp/img/scifi-genre.png);
     background-attachment: fixed;
     background-size: cover;
 }
